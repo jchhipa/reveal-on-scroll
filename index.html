@@ -72,26 +72,26 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<img src="img/1.jpg" alt="" class="reveal">
+				<img src="img/1.jpg" alt="" class="reveal reveal1">
 			</div>
 			<div class="col">
-				<img src="img/2.jpg" alt="" class="reveal">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<img src="img/3.jpg" alt="" class="reveal">
-			</div>
-			<div class="col">
-				<img src="img/4.jpg" alt="" class="reveal">
+				<img src="img/2.jpg" alt="" class="reveal reveal2">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<img src="img/5.jpg" alt="" class="reveal">
+				<img src="img/3.jpg" alt="" class="reveal reveal3">
 			</div>
 			<div class="col">
-				<img src="img/6.jpg" alt="" class="reveal">
+				<img src="img/4.jpg" alt="" class="reveal reveal4">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/5.jpg" alt="" class="reveal reveal5">
+			</div>
+			<div class="col">
+				<img src="img/6.jpg" alt="" class="reveal reveal6">
 			</div>
 		</div>
 
@@ -180,10 +180,35 @@ reveal.init();
 	<script src="src/reveal-on-scroll.js"></script>
 
 	<script>
-   		var reveal = new revealOnScroll({
-			selector: 'reveal'
-		});
-		reveal.init();
+   		var reveal1 = new revealOnScroll({
+   			selector: 'reveal1',
+			delay: 100
+		}).init();
+
+		var reveal2 = new revealOnScroll({
+   			selector: 'reveal2',
+			delay: 400
+		}).init();
+
+		var reveal3 = new revealOnScroll({
+   			selector: 'reveal3',
+			delay: 800
+		}).init();
+
+		var reveal4 = new revealOnScroll({
+   			selector: 'reveal4',
+			delay: 1200
+		}).init();
+
+		var reveal5 = new revealOnScroll({
+   			selector: 'reveal5',
+			delay: 1600
+		}).init();
+
+		var reveal6 = new revealOnScroll({
+   			selector: 'reveal6',
+			delay: 2000
+		}).init();
 
 	</script>
 </body>
