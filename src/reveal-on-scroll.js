@@ -1,5 +1,6 @@
 /*
 * Reveal elements as user scrolls 
+* Author: Juned Chhipa
 */
 
 (function(){
@@ -14,6 +15,9 @@
         };
 
         function revealOnScroll(options) {
+            if (options == null) {
+                options = {};
+            }
             this.start = bind(this.start, this);
             this.config = this.extend(options, this.defaults);
         }
