@@ -5,6 +5,9 @@ FadeIn elements as you scroll down a page
 
 1.0.0
 
+### Demo
+[Demo](http://junedchhipa.github.io/reveal-on-scroll/)
+
 ### Dependencies
 - None
 
@@ -15,7 +18,7 @@ FadeIn elements as you scroll down a page
 
 ```html
   <section class="reveal">
-  	<img src="lorempixel.com/400/350"></img>
+    <img src="lorempixel.com/400/350"></img>
   </section>
 ```
 
@@ -23,7 +26,7 @@ FadeIn elements as you scroll down a page
 
 ```css
   .reveal {
-  	opacity: 0;
+    opacity: 0;
   }
 ```
 
@@ -39,10 +42,10 @@ new reveal-on-scroll().init();
 
 ```javascript
 var reveal = new revealOnScroll({
-	selector: 'element',
-    	delay: 500,
-    	offset: 100,
-    	animationSpeed: 200
+  selector: 'element',
+      delay: 500,
+      offset: 100,
+      animationSpeed: 200
 }); 
 reveal.init();
 ```
