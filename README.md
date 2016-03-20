@@ -5,10 +5,6 @@ FadeIn elements as you scroll down a page
 
 1.0.0
 
-## Documentation
-
-It just take seconds to install and use WOW.js!
-
 ### Dependencies
 - None
 
@@ -23,7 +19,7 @@ It just take seconds to install and use WOW.js!
   </section>
 ```
 
--CSS
+- CSS
 
 ```css
   .reveal {
