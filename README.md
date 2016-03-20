@@ -33,7 +33,7 @@ FadeIn elements as you scroll down a page
 - JavaScript
 
 ```javascript
-new reveal-on-scroll().init();
+new revealOnScroll().init();
 ```
 
 ### Extend settings
