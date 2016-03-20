@@ -1,1 +1,190 @@
-My Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reveal On Scroll</title>
+
+	<style>
+		body {
+			color: #666;
+			font-family: Arial;
+		}
+		.intro {
+			margin-top: 100px;
+			margin-bottom: 100px;
+			text-align: center;
+		}
+		.intro p {
+			margin-top: 45px;
+			margin-bottom: 30px;
+			font-size: 26px;
+		}
+		h3 {
+			font-size: 28px;
+		}
+
+		.code {
+			padding: 20px 10px 10px;
+			margin-bottom: 25px;
+			font-size: 18px;
+			background-color: #e7e7e7;
+			border: 1px solid gray;
+		}
+
+		table {
+			width: 100%;
+			table-layout: fixed;
+			margin-bottom: 30px;
+		}
+		
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.row:before, .row:after {
+			display: table;
+			content: "";
+		}
+		.row:after {
+			clear:both;
+		}
+		.col {
+			width: 50%;
+			float: left;
+		}
+		.reveal {
+			opacity: 0;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row intro">
+			<h1>Hi!</h1>
+			<p>
+				Scroll to reveal elements
+			</p>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/1.jpg" alt="" class="reveal">
+			</div>
+			<div class="col">
+				<img src="img/2.jpg" alt="" class="reveal">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/3.jpg" alt="" class="reveal">
+			</div>
+			<div class="col">
+				<img src="img/4.jpg" alt="" class="reveal">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/5.jpg" alt="" class="reveal">
+			</div>
+			<div class="col">
+				<img src="img/6.jpg" alt="" class="reveal">
+			</div>
+		</div>
+
+		<div class="how">
+			<h3>How to Use</h3>
+			<p>
+				Give an element css property opacity 0 (class .reveal by default).
+			</p>
+			<div class="code">
+				<pre>.reveal { opacity: 0;}</pre>
+			</div>
+			<p>
+				Link and activate revealOnScroll.js
+			</p>
+			<div class="code">
+				<pre>&lt;script src="js/reveal-on-scroll.min.js"&gt;&lt;/script&gt;<br/>new repeatOnScroll().init();
+				</pre>
+			</div>
+		</div>
+
+		<div class="options">
+			<h3>Options</h3>
+			<table cellspacing="0" cellpadding="10" border="1">
+				<tr>
+					<td>
+						<strong>selector</strong>
+					</td>
+					<td>
+						Default: <code>'reveal'</code>
+					</td>
+					<td>
+						<code>String</code> A selector which identifies the element that should reveal on scroll.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>delay</strong>
+					</td>
+					<td>
+						Default: <code>100</code>
+					</td>
+					<td>
+						<code>Number</code> Delay the fade animation
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>offset</strong>
+					</td>
+					<td>
+						Default: <code>0</code>
+					</td>
+					<td>
+						<code>Number</code> distance to the element when triggering the animation
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>animationSpeed</strong>
+					</td>
+					<td>
+						Default: <code>1500</code>
+					</td>
+					<td>
+						<code>Number</code> Set the speed of the fade animation
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="example">
+		<h3>Example</h3>
+			<div class="code">
+<pre>var reveal = new revealOnScroll({
+	selector: 'element',
+    	delay: 500,
+    	offset: 100,
+    	animationSpeed: 200
+}); 
+reveal.init();
+</pre>
+			</div>
+		</div>
+	</div>
+
+	<script src="src/reveal-on-scroll.js"></script>
+
+	<script>
+   		var reveal = new revealOnScroll({
+			selector: 'reveal'
+		});
+		reveal.init();
+
+	</script>
+</body>
+</html>
